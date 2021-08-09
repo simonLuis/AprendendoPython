@@ -2,7 +2,7 @@ import qrcode
 
 url = 'https://www.instagram.com/gustavo_simon5/'
 
-qr = qrcode.QRcode(
+qr = qrcode.QRCode(
     version=1,
     box_size=4,
     border=5
