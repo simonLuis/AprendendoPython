@@ -1,4 +1,5 @@
 import qrcode
+from PIL import Image
 
 url = 'https://www.instagram.com/gustavo_simon5/'
 
@@ -13,3 +14,6 @@ qr.make(fit=True)
 
 img = qr.make_image(fill='black', back_color='white')
 img.show()
+img.save('./QrCode/images/qrcode.png')
+
+print("Qrcode foi gerado corretamente")
